@@ -1,0 +1,243 @@
+// #section_one{
+//     .box{
+//         background-color: pink;
+//         border: 1px solid red;
+//         h1{
+//             font-size: 5rem;
+//         }
+//     }
+//      }
+//     //  telephone
+//      @media(max-width:576px){
+// #section_one{
+//     .box{
+//         background-color: blue;
+//     }
+// }
+//      }
+//      @media(min-width:576px)and(max-width:768px){
+//         #section_one{
+//             .box{
+//                 background-color: greenyellow;
+//                 font-size: 3rem;
+//             }
+//      }}
+#creative {
+  width: 100%;
+  height: 100vh;
+  background-image: url(http://www.themesindustry.com/html/maxo/images/banner1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+  .box-text {
+    position: absolute;
+
+    top: 40%;
+    left: 8%;
+    color: white;
+    padding: 40px 20px;
+    h1 {
+      font-size: 3rem;
+      font-weight: 200;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI",
+        Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue",
+        sans-serif;
+    }
+    span {
+      color: white;
+      font-weight: bold;
+    }
+    h4 {
+      font-size: 3rem;
+    }
+    .btn1 {
+      background-color: #42d9e4;
+      padding: 12px 40px;
+      font-weight: bold;
+      margin-top: 15px;
+      display: inline-block;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      position: relative;
+      transition: 0.5s ease-in-out;
+      z-index: 1;
+
+      &:hover {
+        color: black;
+        &::before {
+          width: 100%;
+        }
+      }
+      &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        transition: 0.5s ease-in-out;
+      }
+    }
+    .btn2 {
+      border: 2px solid white;
+      padding: 12px 40px;
+      margin-top: 15px;
+      display: inline-block;
+      border-radius: 5px;
+      text-decoration: none;
+      color: white;
+      position: relative;
+      transition: 0.5s ease-in-out;
+      z-index: 1;
+      margin-left: 10px;
+      &:hover {
+        color: black;
+        &::before {
+          width: 100%;
+        }
+      }
+      &::before {
+        z-index: -1;
+        content: "";
+        position: absolute;
+        width: 0%;
+        height: 100%;
+        background-color: white;
+        top: 0;
+        left: 0;
+        border-radius: 5px;
+        transition: 0.5s ease-in-out;
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  #creative {
+    .box-text {
+      h1 {
+        font-size: 1.5rem;
+        span {
+          color: red;
+        }
+      }
+      h4 {
+        font-size: 1rem;
+      }
+      .btn1 {
+        padding: 10px;
+        font-size: 10px;
+      }
+    }
+  }
+}
+#explore {
+  .text-box {
+    color: #515a5f;
+    text-align: center;
+    p{
+
+      margin: 30px 0 10px 0;
+    }
+    h2{
+     
+      margin-bottom:  30px ;
+      font-size: 3rem;
+      font-weight: 400;
+    }
+  }
+  .boxes{
+    margin: 0 auto;
+    .box{
+      
+width: 25%;
+margin: 15px;
+padding: 40px 20px;
+
+      box-sizing: grey;
+    text-align: center;
+    transition: 0.5s ease-in-out;
+    box-shadow: 0 0 20px 0 rgb(224, 221, 221);
+    &:hover{
+      background-color: #42D9E4;
+      i,p,h4{
+        color: white;
+      }
+      i{
+        transform: translateY(-10px);
+      }
+
+    }
+   
+    h4{
+      font-size: 1.25rem;
+      font-weight: 500;
+       color: #666666;
+    }
+    p{
+      font-size: 0.9375rem;
+      font-weight: 350;
+      color: #666666;
+     
+     
+    }
+    i{
+     color:  #42D9E4;
+     font-size: 50px;
+     margin-bottom: 10px;
+     transform: translateY(0px);
+     transition: 0.5s ease-in-out;
+    }
+    }
+  }
+}
+@media(max-width:576px){
+  h1{
+    font-size: 1rem;
+    p{width: 10%;}
+  }
+}
+#maxo{
+
+  .box{
+    img{
+      background-attachment: fixed;
+      width: 100%;
+     
+        background-color: #F5F5F5;
+      }
+      h2{
+        color: #515A5F;
+      }
+    .pic{
+
+      margin-top: 70px;
+span{
+  img{
+    width: 100%;
+    border: 2px solid #515A5F;
+    border-radius: 50%;
+    
+  }
+}
+.name-box{
+  padding: 10px;
+  margin-left: 20px;
+  h6,span{
+    color: #515A5F;
+  }
+}
+
+}
+p{
+  margin-top: 30px;
+}
+    }
+   
+  }
+
